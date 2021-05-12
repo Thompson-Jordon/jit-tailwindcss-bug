@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
 
 function App() {
+  const color = "blue"
+  const buttonBg = `bg-${color}-600`
+  const buttonColor = "bg-purple-600"
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button className={`${buttonColor} w-auto px-4 py-2 text-white font-semibold m-8`}>
+        Button
+      </button>
+      <button className={`${buttonBg} w-auto px-4 py-2 text-white font-semibold m-8 border border-blue-200`}>
+        Button
+      </button>
     </div>
   );
 }
